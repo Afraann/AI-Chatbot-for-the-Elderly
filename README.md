@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# AI Elderly Chatbot
+An AI-powered companion chatbot designed to assist elderly users by providing medication reminders, friendly conversations, and easy interaction through voice and text. The chatbot aims to reduce loneliness, improve routine management, and provide a simple, accessible interface for older adults.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Acknowledgement
+This project was developed as part of a 24-hour Hackathon "Teranis'25", held at LBS College of Engineering, Kasaragod. We are grateful to the organizers, mentors, and fellow participants for providing us with this opportunity.
 
-## Available Scripts
+A special thanks to Mohammed Irfan Mazhar, Mohammed Shiban and Hathim, whose collaboration, dedication, and creativity made this project possible.
 
-In the project directory, you can run:
+We are proud to share that our project was awarded 3rd Place in the competition.
 
-### `npm start`
+## Features
+- Voice & Text Input – Users can interact with the chatbot naturally.
+- Medication Reminders – Reminds elders to take their medicines on time.
+- Friendly Conversations – Provides engaging responses to reduce loneliness.
+- Multi-language Support – Can translate and communicate in multiple regional languages.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stacks Used
+- Frontend: React.js
+- Backend: Node.js, Express.js
+- AI Integration: Ollama Chatbot
+- Voice Recognition: Web Speech API
+- Package Manager: npm
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation and Setup
+### 1. Clone the Repositories
+```bash
+git clone https://github.com/your-username/AI-elderly-chatbot.git
+cd AI-elderly-chatbot-main
+```
 
-### `npm test`
+### 2. Install Dependencies
+- Frontend
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Backend
+```bash
+cd ollama-chatbot
+npm install
+```
 
-### `npm run build`
+### 3. Run the Application
+- Start the Backend
+```bash
+cd ollama-chatbot
+node server.js
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Start the Frontend
+```bash
+cd ..
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Open your browser at http://localhost:3000
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
+- Speak or type to the chatbot.
+- Receive responses and reminders.
+- Customize medication schedules.
+- Switch between supported languages
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
