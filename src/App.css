@@ -1,0 +1,166 @@
+/* Overall app container with vertical layout */
+* {
+  background-color: #FAF3E0; /* Creamy White */
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Icon styling */
+.icon {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  color: #A29BFE; /* Soft Lavender */
+  transition: transform 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  color: #8E7CC3; /* Deeper pastel lavender */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  color: #374151; /* Dark Gray for readability */
+  padding: 10px;
+}
+
+/* App title at the top */
+.app-title {
+  text-align: center;
+  color: #473ce2; /* Soft Lavender */
+  font-size: 3rem;
+  font-family: fantasy;
+  margin-bottom: 10px;
+}
+
+/* Full-height chat container with pastel theme */
+.chat-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #FFEAA7; /* Light Yellow */
+  border-radius: 12px;
+  padding: 15px;
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+/* Bot and user message bubble styling */
+.message {
+  max-width: 75%;
+  padding: 10px 15px;
+  border-radius: 18px;
+  margin-bottom: 12px;
+  word-wrap: break-word;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Bot messages with pastel blue */
+.message.bot {
+  background-color: #D0E8F2; /* Soft Sky Blue */
+  color: #374151; /* Dark Gray */
+  align-self: flex-start;
+  border-bottom-left-radius: 0;
+}
+
+/* User messages with pastel purple */
+.message.user {
+  background-color: #A29BFE; /* Soft Lavender */
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 0;
+}
+
+/* Reset button */
+.reset-btn {
+  background-color: #A29BFE; /* Soft Lavender */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: center;
+}
+
+.reset-btn:hover {
+  background-color: #8E7CC3; /* Slightly deeper pastel lavender */
+}
+
+/* Sticky input container */
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #DFF9FB; /* Light Cyan */
+  border-radius: 12px;
+  margin-top: 10px;
+  gap: 10px;
+  position: sticky;
+  bottom: 0;
+}
+
+/* Input field */
+.input-container input {
+  flex-grow: 1;
+  padding: 12px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: #FFEAA7; /* Light Yellow */
+  color: #374151; /* Dark Gray */
+  min-width: 0;
+}
+
+/* Voice/Send button */
+.input-container button {
+  background-color: #A29BFE; /* Soft Lavender */
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.input-container button:hover {
+  background-color: #8E7CC3; /* Deeper pastel lavender */
+}
+
+/* Scrollbar styling */
+.chat-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background-color: #A29BFE; /* Match user message color */
+  border-radius: 10px;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+  .message {
+    max-width: 85%;
+  }
+  .app-title {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,57 @@
+/* Chat container styling - pastel background */
+.chat-container {
+    height: calc(100vh - 100px); /* Adjust height to fit above input */
+    width: 100%;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #FAF3E0; /* Warm creamy white */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px; /* Space for the fixed input */
+}
+
+/* General message styling for both user and bot */
+.message {
+    max-width: 70%;
+    padding: 15px;
+    margin: 8px 0;
+    border-radius: 18px;
+    font-size: 1rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+    display: inline-block;
+}
+
+/* Bot messages aligned left with soft pastel blue */
+.bot-message {
+    background-color: #D0E8F2; /* Soft sky blue */
+    color: #374151; /* Dark gray text for contrast */
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+}
+
+/* User messages aligned right with pastel purple */
+.user-message {
+    background-color: #A29BFE; /* Soft lavender */
+    color: #FFFFFF; /* White text */
+    align-self: flex-end;
+    border-bottom-right-radius: 0;
+}
+
+/* Smooth scroll effect */
+.chat-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+    background-color: #A29BFE; /* Match user message color */
+    border-radius: 10px;
+}
+
+/* Empty chat message */
+.empty-chat {
+    text-align: center;
+    color: #94A3B8;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}

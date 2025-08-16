@@ -1,0 +1,85 @@
+/* VoiceInput.css */
+
+/* Container at bottom with reset button aligned left */
+.voice-input-container {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #FFEAA7; /* Creamy White */
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+/* Reset button styling */
+.reset-btn {
+    background-color: #FF6B6B; /* Soft Coral */
+    border: none;
+    padding: 12px 16px;
+    border-radius: 12px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.reset-btn:hover {
+    background-color: #E63946; /* Slightly deeper coral */
+}
+  
+/* Input and buttons in one row */
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    background-color: #FAF3E0; /* Light Yellow */
+    border-radius: 12px;
+    padding: 10px;
+}
+  
+/* Input field */
+.input-wrapper input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #374151; /* Dark Gray */
+    font-size: 1.2rem;
+    padding: 10px;
+}
+  
+/* Send button */
+.send-btn,
+.reset-btn,
+.voice-btn {
+    background-color: #A29BFE; /* Soft Lavender */
+    border: none;
+    padding: 12px 16px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+  
+.send-btn:hover {
+    background-color: #8E7CC3; /* Slightly deeper pastel lavender */
+}
+  
+/* Voice button */
+.voice-btn {
+    background-color: #D0E8F2; /* Soft Sky Blue */
+    border: none;
+    padding: 12px 16px;
+    border-radius: 12px;
+    color: #374151; /* Dark Gray */
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+

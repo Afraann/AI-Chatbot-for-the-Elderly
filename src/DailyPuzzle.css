@@ -1,0 +1,89 @@
+/* Daily Puzzle Container */
+.daily-puzzle-container {
+    background-color: #FFEAA7; /* Tailwind blue-800 */
+    color: #252222;
+    padding: 30px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .daily-puzzle-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    background-color: #FFEAA7; /* Tailwind blue-800 */
+    
+  }
+  
+  /* Puzzle Card */
+  .puzzle-card {
+    background-color: #c8af5c; /* Slightly darker blue for the puzzle card */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .puzzle-card:hover {
+    background-color: #d1ba70; /* On hover, change to blue-500 */
+  }
+  
+  .puzzle-question {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+    height: 5vh;
+    padding-top: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Answer Input */
+  .answer-input {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #FFEAA7; /* Slightly darker blue for input */
+    color: #252222;
+    font-size: 1rem;
+  }
+  
+  .answer-input::placeholder {
+    color: #252222; /* Light gray placeholder text */
+  }
+  
+  /* Submit Button */
+  .submit-answer-btn {
+    background-color: #FFEAA7; /* Blue-500 */
+    color: #252222;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-answer-btn:hover {
+    background-color: #2563eb; /* Blue-600 */
+  }
+  
+  /* Answer Feedback */
+  .answer-feedback {
+    margin-top: 20px;
+    font-size: 1.1rem;
+  }
+  
+  .correct {
+    color: #10b981; /* Green for correct answers */
+  }
+  
+  .incorrect {
+    color: #ef4444; /* Red for incorrect answers */
+  }
+  
